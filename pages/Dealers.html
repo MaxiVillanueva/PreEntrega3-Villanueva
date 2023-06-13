@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="../estilos/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Gruppo&display=swap" rel="stylesheet">
+    <title>Dealers</title>
+</head>
+<body class="bodydealer">
+    <header>
+
+        <!-- menu hamburguesa oculto para pc. Solo para tablet y celulares -->
+
+        <div class="menu-hamburguesa">
+            <input type="checkbox" id="toggle" class="checkbox-toggle">
+            <label for="toggle" class="icono-hamburguesa">&#9776;</label>
+            <nav class="opciones-menu">
+              <input type="checkbox" id="toggle" class="checkbox-toggle">
+              <label for="toggle" class="icono-hamburguesa">&#9776;</label>
+              <ul class="opciones-lista">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/Historia.html">Historia</a></li>
+                <li><a href="../pages/HyperCars.html">HyperCars</a></li>
+                <li><a href="../pages/Contacto.html">Contacto</a></li>
+              </ul>
+              <div class="redes-sociales">
+                <a href="https://www.youtube.com/user/PaganiAutomobili" target="_blank" ><img src="../img/youtube-logo-icone-noir.png" alt="Logo de youtube"></a>
+                <a href="https://www.instagram.com/paganiautomobili/" target="_blank" ><img src="../img/ig-logo-png.png" alt="Logo de Instagram"></a>
+                <a href="https://twitter.com/OfficialPagani" target="_blank" ><img src="../img/twitter logo.png" alt="Logo de Twitter"></a>
+                <a href="https://www.pinterest.it/paganiofficial/" target="_blank" ><img src="../img/logo-pinterest-noir.png" alt="Logo Pinterest"></a>
+              </div>
+            </nav>
+        </div>
+
+        <div >
+            <nav>
+                <ul class="banner">
+
+                    <li class="link">
+                        <a href="../pages/HyperCars.html">HyperCars</a>
+                    </li>
+
+                    <li class="link">
+                        <a href="../index.html">Home</a> 
+                    </li>
+
+                    <li class="paganilogo"><img src="../img/PaganiLogo.png" alt="Logo de pagani"></li>
+
+                    <li class="link">
+                        <a href="../pages/Historia.html">Historia</a>                       
+                    </li>
+
+                    <li class="link">
+                        <a href="../pages/Contacto.html">Contacto</a> 
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+ 
+    </header>
+
+    <main>
+        <h1 class="h1-dealers">
+            <i>dealers</i>
+        </h1>
+
+        <h2 class="h2-dealers">
+            Descubra la red mundial de distribuidores y servicios de Pagani
+        </h2>
+
+        <div class="maps">
+
+            <img src="../img/google maps.jpg" alt="googlemaps imagen">
+
+            <form class="formdealer" action="search.php" method="get">
+                <label for="search-term">Buscar:</label>
+                <input type="text" id="search-term" name="q" placeholder="Ingresa tu búsqueda aquí">
+                <button type="submit">Buscar</button>
+            </form>
+
+        </div>
+          
+
+    </main>
+
+    <footer class="contenedor-footer">
+
+        <div class="h3-historia">
+            <h3 class="fs-6">
+                © 2023 Horacio Pagani S.P.A. - rights reserved
+            </h3>
+        </div>
+
+        <div class="contenedor-redes">
+            <div>
+
+                <a href="https://www.youtube.com/user/PaganiAutomobili" target="_blank" >
+                    <img class="item-fixed1" src="../img/youtube-logo-icone-noir.png" alt="Logo de Youtube">
+                </a>
+
+                <a href="https://www.instagram.com/paganiautomobili/" target="_blank" >
+                    <img class="item-fixed2" src="../img/ig-logo-png.png" alt="Logo de Instagram">
+                </a>
+                
+                <a href="https://twitter.com/OfficialPagani" target="_blank" >
+                    <img class="item-fixed3" src="../img/twitter logo.png" alt="Logo de Twitter">
+                </a>
+
+                <a href="https://www.pinterest.it/paganiofficial/" target="_blank" >
+                    <img class="item-fixed4" src="../img/logo-pinterest-noir.png" alt="Logo Pinterest">
+                </a>
+
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

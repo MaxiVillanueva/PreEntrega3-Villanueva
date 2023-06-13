@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyindex{
+    background-image: url(../img/paganii_utopia_2023_4k_8k_4-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.banner{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgba(205,154,154,0);
+    background: linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+    background: -webkit-linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+    background: -moz-linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+}
+
+.paganilogo img{
+    height: 27px;
+}
+
+.paganilogo{
+    list-style: none;
+}
+
+.link{
+    list-style: none;
+}
+
+.link a{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.671);
+    text-decoration: none;
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.link a:hover{
+    font-size: 2rem;
+    transition: font-size 0.5s ease; /* Transición de medio segundo */
+
+}
+
+.link a:not(:hover) {
+  font-size: 1.5rem;
+  transition: font-size 0.5s ease;
+}
+
+.h1-index{
+    text-align: center;
+    font-size: 2.5rem;
+    color: antiquewhite;
+    margin-top: 2rem;
+}
+
+
+.contenedor-index{
+    font-size: 6rem;
+    font-family: 'Great Vibes', cursive;
+    color: antiquewhite;
+    /* dipley flex */
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+
+}
+
+.item-fixed1, .item-fixed2, .item-fixed3, .item-fixed4{
+    height: 2rem;
+}
+
+.contenedor-footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.h4-index{
+    color: rgba(240, 248, 255, 0.281);
+    position: fixed;
+    bottom: 2px;
+    left: 8px;
+}
+
+.contenedor-redes{
+    position: fixed;
+    bottom: 2px;
+    right: 8px;
+}
+
+.contenedor-redes a{
+    text-decoration: none;
+}
+
+/* media quarys */
+
+/* PC */
+@media screen and (min-width:850px){
+    .menu-hamburguesa{
+        display: none;
+    }
+}
+
+/* tablets */
+@media screen and (max-width:850px){
+    .contenedor-redes, .link, .linkhyper{
+        display: none;
+    }
+
+    .contenedor-index{
+        margin-top: 11rem;
+        font-size: 5rem;
+    }
+
+    .contenedor-hyper{
+        align-items: flex-start;
+    }
+
+    
+}
+
+/* celulares */
+@media screen and (max-width:500px){
+    .h1-index{
+        font-size: 2rem;
+    }
+    
+    .contenedor-index{
+        font-size: 3.5rem;
+        margin-top: 13rem;
+    }
+
+    .h4-index{
+        font-size: 10px;
+    }
+}
+
+/* menu hamburguesa */
+
+.menu-hamburguesa {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+.icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+.opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.opciones-lista {
+    font-size: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+  }
+  
+.opciones-lista li {
+    margin-bottom: 10px;
+  }
+  
+.opciones-lista li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+.checkbox-toggle {
+    display: none;
+  }
+  
+.checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0);
+  }
+  
+  
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 45%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+.redes-sociales a {
+    margin: 10px;
+  }
+  
+.redes-sociales img {
+    width: 50px;
+    height: 50px;
+  }
+
+.bodyhyper{
+    background-image: url(../img/5594016.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bannerhyper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgb(0, 0, 0);
+}
+
+.linkhyper{
+    list-style: none;
+}
+
+.linkhyper a{
+    font-size: 1.5rem;
+    color: rgba(253, 249, 249, 0.671);
+    text-decoration: none;
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.linkhyper a:hover{
+    font-size: 2rem;
+    transition: font-size 0.5s ease; /* Transición de medio segundo */
+
+}
+
+.linkhyper a:not(:hover) {
+  font-size: 1.5rem;
+  transition: font-size 0.5s ease;
+}
+
+.h3-hyper{
+    color: rgba(0, 0, 0, 0.185);
+    position: fixed;
+    bottom: 2px;
+    left: 8px;
+}
+
+.mainhyper div div img{
+    height: 550px;
+}
+
+.contenedor-hyper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bodyhistoria{
+    background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.bannerhistoria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgb(255, 255, 255);
+}
+
+.h3-historia{
+    color: rgba(255, 255, 255, 0.185);
+    position: fixed;
+    bottom: 2px;
+    left: 8px;
+}
+
+.h1-historia{
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.h2-historia, .p-historia, .h1-historia{
+    color: azure;
+}
+
+main div div img{
+    height: 450px;
+}
+
+.contenedor-historia{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.bodydealer{
+    background-image: url(../img/paganirojo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.h1-dealers{
+    margin: 4rem;
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.maps{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.maps{
+    height: 30rem;
+}
+
+.h2-dealers{
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+    margin-left: 4rem;
+}
+
+.bodycontacto{
+    background-image: url(../img/9dbfe5d9f34ffafd2c5ba2a2d0867be0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.h1-hyper{
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+.h1-contacto{
+    margin: 4rem;
+    font-family: 'Goldman', cursive;
+    font-family: 'Gruppo', cursive;
+    font-weight: bold;
+}
+
+/*  */
+
+.formulario{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-dentro-formulario{
+    font-size: 30px;
+    background-color: #e2e2e257;
+    padding: 15px;
+}
+
+.form{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.h2-contacto{
+    color: antiquewhite;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.p-contacto{
+    margin-top: 30px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.h3-contacto{
+    color: rgba(0, 0, 0, 0.678);
+    position: fixed;
+    bottom: 2px;
+    left: 8px;
+}

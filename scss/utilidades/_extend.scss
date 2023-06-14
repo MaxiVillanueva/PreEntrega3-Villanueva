@@ -1,0 +1,12 @@
+// ejemplo
+// %border{
+//     border: 8px solid black;
+
+// para meterlo es:         @extend %border;
+
+%fondo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}

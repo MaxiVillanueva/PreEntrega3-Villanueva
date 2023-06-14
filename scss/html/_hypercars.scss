@@ -1,0 +1,249 @@
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.bodyhyper{
+    background-image: url(../img/5594016.jpg);
+    @extend %fondo;
+}
+
+header{
+
+    // menu hamburguesa 
+    .menu-hamburguesa-hyper{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .checkbox-toggle{
+            display: none;
+        }
+
+        .checkbox-toggle:checked ~ .opciones-menu{
+            transform: translateX(0);
+        }
+
+        .icono-hamburguesa{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1;
+            color: white;
+        }
+
+        .opciones-menu{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            background-color: #181818;
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .checkbox-toggle{
+                display: none;
+            }
+    
+            .checkbox-toggle:checked ~ .opciones-menu{
+                transform: translateX(0);
+            }
+    
+            .icono-hamburguesa{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .opciones-lista{
+                font-size: 30px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-family: 'Goldman', cursive;
+                font-family: 'Gruppo', cursive;
+
+                li{
+                    margin-bottom: 10px;
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }                    
+                }
+            }
+
+            .redes-sociales{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 45%;
+                width: 100%;
+                padding-bottom: 20px;
+
+                a{
+                    margin: 10px;
+                }    
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+
+    // fin de menu hamburguesa 
+
+
+    div{
+        nav{
+            .bannerhyper{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background: rgb(0, 0, 0);
+
+                .linkhyper{
+                    list-style: none;
+
+                    a{
+                        font-size: 1.5rem;
+                        color: rgba(253, 249, 249, 0.671);
+                        text-decoration: none;
+                        font-family: 'Goldman', cursive;
+                        font-family: 'Gruppo', cursive;
+                        font-weight: bold;
+                    }
+
+                    a:hover{
+                        font-size: 2rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover) {
+                        font-size: 1.5rem;
+                        transition: font-size 0.5s ease;
+                    }
+                }
+
+                .paganilogo{
+                    list-style: none;
+
+                    img{
+                        height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainhyper{
+
+    .h1-hyper{
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
+    }
+
+    .contenedor-hyper{
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+       div{
+            img{
+                height: 550px;
+            }
+        } 
+    }
+        
+    
+}
+
+.contenedor-footer{
+
+    .h3-hyper{
+        color: rgba(0, 0, 0, 0.185);
+        position: fixed;
+        bottom: 2px;
+        left: 8px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:851px){
+    header{
+        .menu-hamburguesa-hyper{
+            display: none;
+        }        
+    }
+}
+
+/* tablets */
+@media screen and (max-width:850px){
+
+    .contenedor-footer{
+        .contenedor-redes{
+            display: none;
+        }
+    }
+
+    .header-hyper{
+        div{
+            nav{
+                .bannerhyper{
+                    .linkhyper{
+                        display: none;
+                    }                    
+                }
+            }
+        }
+    }
+
+    .mainhyper{
+        .contenedor-hyper{
+            align-items: flex-start;
+        }        
+    }
+}
+
+/* celulares */
+@media screen and (max-width:500px){
+
+    .contenedor-footer{
+        .h3-hyper{
+            font-size: 10px;
+        }        
+    }
+
+    .mainhyper{
+        .contenedor-hyper{
+           div{
+                img{
+                    margin-top: 4rem;
+                    height: 400px;
+                }
+            } 
+        }
+    }
+}

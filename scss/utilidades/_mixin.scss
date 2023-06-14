@@ -1,0 +1,23 @@
+//ejemplo 
+// @mixin productos ($width, $height, $color-fondo){ 
+// width: $width;       
+// height: $height;       
+// background-color: $color-fondo;
+// }
+
+// @mixin flex{
+// display: flex;
+// justify-content: center;
+// aling-items: center;
+// gap: 1rem;
+// }
+
+// para incluir es:       @include productos(300px, 400px, tomato);        |        @include flex;
+
+@mixin chau-menu-hamburguesa{
+    header{
+        .menu-hamburguesa{
+            display: none;
+        }        
+    }
+}

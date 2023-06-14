@@ -1,0 +1,499 @@
+@charset "UTF-8";
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyindex {
+  background-image: url(../img/paganii_utopia_2023_4k_8k_4-3840x2160.jpg); }
+
+header .menu-hamburguesa {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1; }
+  header .menu-hamburguesa .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+    header .menu-hamburguesa .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .banner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(205, 154, 154, 0);
+  background: linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -webkit-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -moz-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%); }
+  header div nav .banner .link {
+    list-style: none; }
+    header div nav .banner .link a {
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.671);
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .banner .link a:hover {
+      font-size: 2rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .banner .link a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .banner .paganilogo {
+    list-style: none; }
+    header div nav .banner .paganilogo img {
+      height: 27px; }
+
+.main-index .h1-index {
+  text-align: center;
+  font-size: 2.5rem;
+  color: antiquewhite;
+  margin-top: 2rem; }
+
+.main-index .contenedor-index {
+  font-size: 6rem;
+  font-family: 'Great Vibes', cursive;
+  color: antiquewhite;
+  /* dipley flex */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem; }
+
+.contenedor-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .contenedor-footer .h4-index {
+    color: rgba(240, 248, 255, 0.281);
+    position: fixed;
+    bottom: 2px;
+    left: 8px; }
+  .contenedor-footer .contenedor-redes {
+    position: fixed;
+    bottom: 2px;
+    right: 8px; }
+    .contenedor-footer .contenedor-redes a {
+      text-decoration: none; }
+    .contenedor-footer .contenedor-redes div .item-fixed1, .contenedor-footer .contenedor-redes div .item-fixed2, .contenedor-footer .contenedor-redes div .item-fixed3, .contenedor-footer .contenedor-redes div .item-fixed4 {
+      height: 2rem; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  header div nav .banner .link {
+    display: none; }
+  .linkhyper {
+    display: none; }
+  .main-index .contenedor-index {
+    margin-top: 11rem;
+    font-size: 5rem; }
+  .contenedor-hyper {
+    align-items: flex-start; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  .main-index .h1-index {
+    font-size: 2rem; }
+  .main-index .contenedor-index {
+    font-size: 3.5rem;
+    margin-top: 13rem; }
+  .contenedor-footer .h4-index {
+    font-size: 10px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyhyper {
+  background-image: url(../img/5594016.jpg); }
+
+header .menu-hamburguesa-hyper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-hyper .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-hyper .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-hyper .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: white; }
+  header .menu-hamburguesa-hyper .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-hyper .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-hyper .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-hyper .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-hyper .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-hyper .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+    header .menu-hamburguesa-hyper .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-hyper .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-hyper .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .bannerhyper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: black; }
+  header div nav .bannerhyper .linkhyper {
+    list-style: none; }
+    header div nav .bannerhyper .linkhyper a {
+      font-size: 1.5rem;
+      color: rgba(253, 249, 249, 0.671);
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .bannerhyper .linkhyper a:hover {
+      font-size: 2rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .bannerhyper .linkhyper a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .bannerhyper .paganilogo {
+    list-style: none; }
+    header div nav .bannerhyper .paganilogo img {
+      height: 27px; }
+
+.mainhyper .h1-hyper {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold; }
+
+.mainhyper .contenedor-hyper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .mainhyper .contenedor-hyper div img {
+    height: 550px; }
+
+.contenedor-footer .h3-hyper {
+  color: rgba(0, 0, 0, 0.185);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-hyper {
+    display: none; } }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  .header-hyper div nav .bannerhyper .linkhyper {
+    display: none; }
+  .mainhyper .contenedor-hyper {
+    align-items: flex-start; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  .contenedor-footer .h3-hyper {
+    font-size: 10px; }
+  .mainhyper .contenedor-hyper div img {
+    margin-top: 4rem;
+    height: 400px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodyhistoria {
+  background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg); }
+
+header div nav .bannerhistoria {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: white; }
+  header div nav .bannerhistoria .link-historia {
+    list-style: none; }
+    header div nav .bannerhistoria .link-historia a {
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .bannerhistoria .link-historia a:hover {
+      font-size: 2rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .bannerhistoria .link-historia a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .bannerhistoria .paganilogo {
+    list-style: none; }
+    header div nav .bannerhistoria .paganilogo img {
+      height: 27px; }
+
+main .h1-historia {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  color: #f0ffff; }
+
+main .contenedor-historia {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px; }
+  main .contenedor-historia .h2-historia {
+    color: #f0ffff; }
+  main .contenedor-historia .imagen-nene img {
+    height: 450px; }
+  main .contenedor-historia .p-historia {
+    color: #f0ffff; }
+
+.contenedor-footer .h3-historia {
+  color: rgba(255, 255, 255, 0.185);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  header div nav .bannerhistoria .link-historia {
+    display: none; }
+  main .contenedor-historia .h2-historia {
+    font-size: 15px; }
+  main .contenedor-historia .imagen-nene img {
+    height: 350px; }
+  main .contenedor-historia .p-historia {
+    font-size: 13px; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  main .contenedor-historia .h2-historia {
+    font-size: 12px; }
+  main .contenedor-historia .imagen-nene img {
+    height: 200px; }
+  main .contenedor-historia .p-historia {
+    font-size: 10px; }
+  .contenedor-footer .h3-historia {
+    font-size: 10px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodydealer {
+  background-image: url(../img/paganirojo.jpg); }
+
+main .h1-dealers {
+  margin: 4rem;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  font-style: italic; }
+
+main .h2-dealers {
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  margin-left: 4rem; }
+
+main .maps {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 30rem; }
+
+/* tablets */
+@media screen and (max-width: 850px) {
+  .contenedor-footer .contenedor-redes {
+    display: none; }
+  main .maps img {
+    height: 200px; } }
+
+.bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+.bodycontacto {
+  background-image: url(../img/9dbfe5d9f34ffafd2c5ba2a2d0867be0.jpg); }
+
+main .h1-contacto {
+  margin: 4rem;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold;
+  font-style: italic; }
+
+main .formulario {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center; }
+  main .formulario .contenedor-dentro-formulario {
+    font-size: 30px;
+    background-color: #e2e2e257;
+    padding: 15px; }
+    main .formulario .contenedor-dentro-formulario .form {
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 5px; }
+
+main .h2-contacto {
+  color: antiquewhite;
+  font-size: 40px;
+  margin-top: 30px;
+  text-align: center; }
+
+main .p-contacto {
+  margin-top: 30px;
+  color: antiquewhite;
+  text-align: center; }
+
+.contenedor-footer .h3-contacto {
+  color: rgba(0, 0, 0, 0.678);
+  position: fixed;
+  bottom: 2px;
+  left: 8px; }
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

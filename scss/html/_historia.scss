@@ -1,0 +1,165 @@
+@import "../utilidades/variables.scss";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.bodyhistoria{
+    background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg);
+    @extend %fondo;
+}
+
+header{
+    div{
+        nav{
+            .bannerhistoria{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background: rgb(255, 255, 255);
+
+                .link-historia{
+                    list-style: none;
+
+                    a{
+                        font-size: 1.5rem;
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        font-family: 'Goldman', cursive;
+                        font-family: 'Gruppo', cursive;
+                        font-weight: bold;
+                    }
+
+                    a:hover{
+                        font-size: 2rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 1.5rem;
+                        transition: font-size 0.5s ease;
+                    }
+                }
+
+                .paganilogo{
+                    list-style: none;
+
+                    img{
+                        height: 27px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    .h1-historia{
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
+        color: $color-historia; 
+    }
+
+    .contenedor-historia{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-left: 250px;
+        margin-right: 250px;
+
+        .h2-historia{
+            color: $color-historia;             
+        }
+
+        .imagen-nene{
+           img{
+            height: 450px;
+           } 
+        }
+
+        .p-historia{
+            color: $color-historia; 
+        }
+    }
+}
+
+.contenedor-footer{
+
+    .h3-historia{
+        color: rgba(255, 255, 255, 0.185);
+        position: fixed;
+        bottom: 2px;
+        left: 8px;
+    }
+}
+
+/* tablets */
+@media screen and (max-width:850px){
+
+    .contenedor-footer{
+        .contenedor-redes{
+            display: none;
+        }
+    }
+
+    header{
+        div{
+            nav{
+                .bannerhistoria{
+                    .link-historia{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .contenedor-historia{
+            
+            .h2-historia{
+                font-size: 15px;
+            }
+            
+            .imagen-nene{
+                img{
+                    height: 350px;
+                }
+            }
+
+            .p-historia{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/* celulares */
+@media screen and (max-width:500px){
+
+    main{
+        .contenedor-historia{
+            
+            .h2-historia{
+                font-size: 12px;
+            }
+
+            .imagen-nene{
+                img{
+                    height: 200px;
+                }
+            }
+
+            .p-historia{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .contenedor-footer{
+        .h3-historia{
+            font-size: 10px;
+        }        
+    }
+}

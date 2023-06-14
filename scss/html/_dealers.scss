@@ -1,0 +1,52 @@
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+.bodydealer{
+    background-image: url(../img/paganirojo.jpg);
+    @extend %fondo;
+}
+
+
+
+main{
+    .h1-dealers{
+        margin: 4rem;
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .h2-dealers{
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
+        margin-left: 4rem;
+    }
+
+    .maps{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        height: 30rem;
+    }
+}
+
+/* tablets */
+@media screen and (max-width:850px){
+
+    .contenedor-footer{
+        .contenedor-redes{
+            display: none;
+        }
+    }
+
+    main{
+        .maps{
+            img{
+                height: 200px;
+            }
+        }
+    }
+}

@@ -83,7 +83,17 @@ header{
                     a{
                         color: #fff;
                         text-decoration: none;
-                    }                    
+                    }     
+                                        
+                    a:hover{
+                        font-size: 2rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 30px;
+                        transition: font-size 0.5s ease;
+                    }               
                 }
             }
 
@@ -117,16 +127,16 @@ header{
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-evenly;
-                padding-top: 1rem;
-                padding-bottom: 1rem;
-                background: rgb(0, 0, 0);
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                background: rgb(36, 35, 35);
 
                 .linkhyper{
                     list-style: none;
-
+                    
                     a{
                         font-size: 1.5rem;
-                        color: rgba(253, 249, 249, 0.671);
+                        color: rgb(253, 249, 249);
                         text-decoration: none;
                         font-family: 'Goldman', cursive;
                         font-family: 'Gruppo', cursive;
@@ -134,7 +144,7 @@ header{
                     }
 
                     a:hover{
-                        font-size: 2rem;
+                        font-size: 1.75rem;
                         transition: font-size 0.5s ease; /* Transición de medio segundo */
                     }
 
@@ -148,7 +158,7 @@ header{
                     list-style: none;
 
                     img{
-                        height: 27px;
+                        height: 25px;
                     }
                 }
             }
@@ -165,10 +175,12 @@ header{
     }
 
     .contenedor-hyper{
+        margin-left: 20%;
+        margin-right: 20%;
 
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        // display: flex;
+        // flex-flow: row wrap;
+        // justify-content: center;
 
        div{
             img{
@@ -222,8 +234,24 @@ header{
 
     .mainhyper{
         .contenedor-hyper{
-            align-items: flex-start;
-        }        
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 50px;
+
+            div{
+                div{
+                    div{
+                        img{
+                            margin-top: 3rem;
+                            height: 450px;
+                        }
+                    }
+                }
+            } 
+        
+        }
+
+        
     }
 }
 
@@ -238,10 +266,14 @@ header{
 
     .mainhyper{
         .contenedor-hyper{
-           div{
-                img{
-                    margin-top: 4rem;
-                    height: 400px;
+            div{
+                div{
+                    div{
+                        img{
+                            margin-top: 5rem;
+                            height: 350px;
+                        }
+                    }
                 }
             } 
         }

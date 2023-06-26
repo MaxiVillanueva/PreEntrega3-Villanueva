@@ -29,7 +29,7 @@
 
         <!-- menu hamburguesa oculto para pc. Solo para tablet y celulares -->
 
-        <div class="menu-hamburguesa">
+        <div class="menu-hamburguesa-historia">
             <input type="checkbox" id="toggle" class="checkbox-toggle">
             <label for="toggle" class="icono-hamburguesa">&#9776;</label>
             <nav class="opciones-menu">
@@ -84,17 +84,87 @@
         </h1>
 
         <div class="contenedor-historia">
-            <h2 class="h2-historia">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            </h2>
 
-            <div class="imagen-nene">
-                <img src="../img/1955.jpg" alt="imagen de horacio pagani de niño">
-            </div>
-
-            <p class="p-historia">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptates inventore unde ipsa eos perferendis alias dignissimos, molestiae amet a porro, asperiores ad nam laboriosam qui tempore voluptatibus obcaecati? Sapiente!
-            </p>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/1955.jpg" class="d-block w-100" alt="Horacio Pagani de niño">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>EL NIÑO QUE QUERÍA CREAR EL
+                        COCHE MÁS BONITO DEL MUNDO.</h2>
+                      <p>"Cuando apuntas un arco visionario a una estrella y te dejes flotar en
+                        las alas del sueño hacia un destino impredecible, sediento de
+                        perfeccion y rebelde a la mediocridad, levas contigo el manential
+                        misterioso de un ideal*
+                        Jose Ingenieros, escritor argentino</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/1971.jpg" class="d-block w-100" alt="Gustavito en una minimoto">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>"GUSTAVITO" Y LA MINIMOTO.</h2>
+                      <p>Horacio Pagani tenia unos catorce años cuando le regalaron un motor
+                        Sachs Televel de los años 50, averiado y fuera de uso, Junto a su
+                        amigo Gustavo Marani, "Gustavito" tenian la intención de construir un
+                        kart ya que compartian la misma pasion por los coches, asi que fueron
+                        a Carcarañà, un pequeño pueblo de los alrededores, a comprar cuatro
+                        ruedas pequeñas. Cuendo se dieron cuenta de que con un solo kart na
+                        podian divertirse juntos, pronto dieron paso al proyecto de dos
+                        minimotos.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/1972.jpg" class="d-block w-100" alt="el primer auto de Horacio (un buggie)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>EL BUGGIE QUE MARAVILLÓ LAS
+                        CALLES DE CASILDA</h2>
+                      <p>Antes de terminar la secundaria, Horacio tuvo la oportunided de
+                        construir con sus propias manos un vehiculo de cuatro ruedas. En
+                        efecto, una empresa de Mar del Plata ofreció un kit de carroceria de
+                        plåstico, reforzado con fibra de vidrio, para adaptarlo a la estructura de
+                        otro automovit: en Argentina, el vehiculo se conocia como Dune
+                        Buggie.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/1979.jpg" class="d-block w-100" alt="el primer auto de Horacio (un buggie)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>EL PRIMER F2.</h2>
+                      <p>El trabajo tomo mas de un año y se invirtieron unas cinco mil horas de
+                        trabajo en el proyecto. El vehiculo fue terminado y presentado en una
+                        cena que conto con mas de 300 personas, entre periodistas de la
+                        prensa especializada de la ciuded de Rosario empresarios, técnicos y
+                        fanaticos de las canreras.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/2000.jpg" class="d-block w-100" alt="el primer auto de Horacio (un buggie)">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>EL ZONDA S TAMBIEN DEBUTA EN
+                        GINEBRA.</h2>
+                      <p>Un año despuês del emocionante debut del Zonda C12, Pagani
+                        Automobili pudo presentar el Zonda S, que presento un enorme motor
+                        de siete litros. El automóvil, ademés del propulsor mejorado, presentó
+                        una amplia gama de mejoras técnicas</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
     </main>

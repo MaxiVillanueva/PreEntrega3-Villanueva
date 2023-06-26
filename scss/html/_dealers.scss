@@ -2,15 +2,176 @@
 @import "../utilidades/extend";
 
 .bodydealer{
-    background-image: url(../img/paganirojo.jpg);
+    background-image: url(../img/1121181.jpg);
     @extend %fondo;
 }
 
+header{
+        
+    // menu hamburguesa 
+    .menu-hamburguesa-dealer{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
+        .checkbox-toggle{
+            display: none;
+        }
+
+        .checkbox-toggle:checked ~ .opciones-menu{
+            transform: translateX(0);
+        }
+
+        .icono-hamburguesa{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 1;
+            color: rgb(0, 0, 0);
+        }
+
+        .opciones-menu{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80%;
+            height: 100%;
+            background-color: #181818;
+            padding: 20px;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .checkbox-toggle{
+                display: none;
+            }
+    
+            .checkbox-toggle:checked ~ .opciones-menu{
+                transform: translateX(0);
+            }
+    
+            .icono-hamburguesa{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 30px;
+                cursor: pointer;
+                z-index: 1;
+            }
+
+            .opciones-lista{
+                font-size: 30px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                font-family: 'Goldman', cursive;
+                font-family: 'Gruppo', cursive;
+
+                li{
+                    margin-bottom: 10px;
+
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }     
+                                        
+                    a:hover{
+                        font-size: 2rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 30px;
+                        transition: font-size 0.5s ease;
+                    }               
+                }
+            }
+
+            .redes-sociales{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 45%;
+                width: 100%;
+                padding-bottom: 20px;
+
+                a{
+                    margin: 10px;
+                }    
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    
+    // fin de menu hamburguesa
+
+    div{
+        nav{
+            .banner-dealer{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background: rgba(205,154,154,0);
+                background: linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+                background: -webkit-linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+                background: -moz-linear-gradient(90deg,rgba(205,154,154,0) 0%, #2c2c2c 80%);
+
+                .link{
+                    list-style: none;
+
+                    a{
+                        font-size: 1.5rem;
+                        color: rgb(0, 0, 0);
+                        text-decoration: none;
+                        font-family: 'Goldman', cursive;
+                        font-family: 'Gruppo', cursive;
+                        font-weight: bold;
+                    }
+
+                    a:hover{
+                        font-size: 1.75rem;
+                        transition: font-size 0.5s ease; /* Transición de medio segundo */
+                    }
+
+                    a:not(:hover){
+                        font-size: 1.5rem;
+                        transition: font-size 0.5s ease;
+                    }
+                }
+
+                .paganilogo{
+                    list-style: none;
+
+                    img{
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 main{
     .h1-dealers{
-        margin: 4rem;
+        margin-top: 5rem;
+        text-align: center;
         font-family: 'Goldman', cursive;
         font-family: 'Gruppo', cursive;
         font-weight: bold;
@@ -21,31 +182,86 @@ main{
         font-family: 'Goldman', cursive;
         font-family: 'Gruppo', cursive;
         font-weight: bold;
-        margin-left: 4rem;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
     }
 
     .maps{
-        display: flex;
-        justify-content: space-between;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        height: 30rem;
+        text-align: center;
+    }
+}
+
+/* PC */
+@media screen and (min-width:851px){
+    header{
+        .menu-hamburguesa-dealer{
+            display: none;
+        }        
+    }
+
+    main{
+        .maps{
+            .maps-tablet{
+                display: none;
+            }
+
+            .maps-cel{
+                display: none;
+            }
+        }
     }
 }
 
 /* tablets */
 @media screen and (max-width:850px){
 
-    .contenedor-footer{
-        .contenedor-redes{
-            display: none;
+    header{
+        div{
+            nav{
+                .banner-dealer{
+                    .link{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
     main{
         .maps{
-            img{
-                height: 200px;
+            .maps-pc{
+                display: none;
+            }
+            
+            .maps-cel{
+                display: none;
+            }
+        }
+    }
+
+    .contenedor-footer{
+        .contenedor-redes{
+            display: none;
+        }
+    }
+}
+
+/* celulares */
+@media screen and (max-width:500px){
+
+    main{
+        .maps{
+            .maps-pc{
+                display: none;
+            }
+            
+            .maps-tablet{
+                display: none;
+            }
+
+            .maps-cel{
+                display: block;
             }
         }
     }

@@ -19,6 +19,7 @@
     opacity: 100%; } }
 
 header .menu-hamburguesa-index {
+  z-index: 3;
   position: fixed;
   top: 0;
   right: 0;
@@ -249,8 +250,8 @@ header div nav .banner {
       text-decoration: none;
       margin: 2px; }
       .contenedor-footer .contenedor-redes a img {
-        width: 50px;
-        height: 50px; }
+        width: 40px;
+        height: 40px; }
     .contenedor-footer .contenedor-redes div .item-fixed1, .contenedor-footer .contenedor-redes div .item-fixed2, .contenedor-footer .contenedor-redes div .item-fixed3, .contenedor-footer .contenedor-redes div .item-fixed4 {
       height: 2rem; }
 
@@ -330,7 +331,7 @@ header .menu-hamburguesa-hyper {
     font-size: 30px;
     cursor: pointer;
     z-index: 1;
-    color: white; }
+    color: black; }
   header .menu-hamburguesa-hyper .opciones-menu {
     position: fixed;
     top: 0;
@@ -425,10 +426,29 @@ header div nav .bannerhyper {
   font-weight: bold; }
 
 .mainhyper .contenedor-hyper {
-  margin-left: 20%;
-  margin-right: 20%; }
-  .mainhyper .contenedor-hyper div img {
-    height: 550px; }
+  margin-top: 5rem; }
+  .mainhyper .contenedor-hyper .huayra {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper .imola {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    gap: 3rem; }
+    .mainhyper .contenedor-hyper .imola .texto-imola {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end; }
+  .mainhyper .contenedor-hyper .zonda {
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper div div img {
+    height: 550px;
+    box-shadow: 5px 5px 5px black; }
 
 .contenedor-footer .h3-hyper {
   color: rgba(0, 0, 0, 0.185);
@@ -447,20 +467,36 @@ header div nav .bannerhyper {
     display: none; }
   .header-hyper div nav .bannerhyper .linkhyper {
     display: none; }
-  .mainhyper .contenedor-hyper {
-    margin-left: 0%;
-    margin-right: 0%;
-    height: 50px; }
-    .mainhyper .contenedor-hyper div div div img {
-      margin-top: 3rem;
-      height: 450px; } }
+  .mainhyper .contenedor-hyper .huayra {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper .imola {
+    display: flex;
+    flex-flow: column-reverse;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 3rem; }
+    .mainhyper .contenedor-hyper .imola .texto-imola {
+      display: flex;
+      flex-flow: column;
+      align-items: start; }
+  .mainhyper .contenedor-hyper .zonda {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 3rem; }
+  .mainhyper .contenedor-hyper div div img {
+    height: 450px; } }
 
 /* celulares */
 @media screen and (max-width: 500px) {
   .contenedor-footer .h3-hyper {
     font-size: 10px; }
-  .mainhyper .contenedor-hyper div div div img {
-    margin-top: 5rem;
+  .mainhyper .contenedor-hyper div div img {
     height: 350px; } }
 
 .bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
@@ -472,24 +508,103 @@ header div nav .bannerhyper {
 .bodyhistoria {
   background-image: url(../img/patron-de-lineas-negro_7680x4320_xtrafondos.com.jpg); }
 
+header .menu-hamburguesa-historia {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-historia .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-historia .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-historia .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: black; }
+  header .menu-hamburguesa-historia .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-historia .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-historia .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-historia .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-historia .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-historia .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-historia .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-historia .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-historia .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-historia .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
 header div nav .bannerhistoria {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: white; }
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background: #fff8ee; }
   header div nav .bannerhistoria .link-historia {
     list-style: none; }
     header div nav .bannerhistoria .link-historia a {
       font-size: 1.5rem;
-      color: black;
+      color: #161616;
       text-decoration: none;
       font-family: 'Goldman', cursive;
       font-family: 'Gruppo', cursive;
       font-weight: bold; }
     header div nav .bannerhistoria .link-historia a:hover {
-      font-size: 2rem;
+      font-size: 1.75rem;
       transition: font-size 0.5s ease;
       /* Transición de medio segundo */ }
     header div nav .bannerhistoria .link-historia a:not(:hover) {
@@ -507,17 +622,12 @@ main .h1-historia {
   color: #f0ffff; }
 
 main .contenedor-historia {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin-left: 250px;
-  margin-right: 250px; }
-  main .contenedor-historia .h2-historia {
-    color: #f0ffff; }
-  main .contenedor-historia .imagen-nene img {
-    height: 450px; }
-  main .contenedor-historia .p-historia {
-    color: #f0ffff; }
+  margin-left: 25%;
+  margin-right: 25%; }
+  main .contenedor-historia .carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    background-color: #1b1b1b28; }
+  main .contenedor-historia .carousel .carousel-inner .carousel-item .carousel-caption p {
+    background-color: #1b1b1b28; }
 
 .contenedor-footer .h3-historia {
   color: rgba(255, 255, 255, 0.185);
@@ -525,18 +635,22 @@ main .contenedor-historia {
   bottom: 2px;
   left: 8px; }
 
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-historia {
+    display: none; } }
+
 /* tablets */
 @media screen and (max-width: 850px) {
-  .contenedor-footer .contenedor-redes {
-    display: none; }
+  header .menu-hamburguesa-historia {
+    z-index: 3; }
   header div nav .bannerhistoria .link-historia {
     display: none; }
-  main .contenedor-historia .h2-historia {
-    font-size: 15px; }
-  main .contenedor-historia .imagen-nene img {
-    height: 350px; }
-  main .contenedor-historia .p-historia {
-    font-size: 13px; } }
+  main .contenedor-historia {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .contenedor-footer .contenedor-redes {
+    display: none; } }
 
 /* celulares */
 @media screen and (max-width: 500px) {
@@ -556,10 +670,121 @@ main .contenedor-historia {
   min-height: 100vh; }
 
 .bodydealer {
-  background-image: url(../img/paganirojo.jpg); }
+  background-image: url(../img/1121181.jpg); }
+
+header .menu-hamburguesa-dealer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  header .menu-hamburguesa-dealer .checkbox-toggle {
+    display: none; }
+  header .menu-hamburguesa-dealer .checkbox-toggle:checked ~ .opciones-menu {
+    transform: translateX(0); }
+  header .menu-hamburguesa-dealer .icono-hamburguesa {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1;
+    color: black; }
+  header .menu-hamburguesa-dealer .opciones-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #181818;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .menu-hamburguesa-dealer .opciones-menu .checkbox-toggle {
+      display: none; }
+    header .menu-hamburguesa-dealer .opciones-menu .checkbox-toggle:checked ~ .opciones-menu {
+      transform: translateX(0); }
+    header .menu-hamburguesa-dealer .opciones-menu .icono-hamburguesa {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 1; }
+    header .menu-hamburguesa-dealer .opciones-menu .opciones-lista {
+      font-size: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive; }
+      header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li {
+        margin-bottom: 10px; }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a {
+          color: #fff;
+          text-decoration: none; }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a:hover {
+          font-size: 2rem;
+          transition: font-size 0.5s ease;
+          /* Transición de medio segundo */ }
+        header .menu-hamburguesa-dealer .opciones-menu .opciones-lista li a:not(:hover) {
+          font-size: 30px;
+          transition: font-size 0.5s ease; }
+    header .menu-hamburguesa-dealer .opciones-menu .redes-sociales {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 45%;
+      width: 100%;
+      padding-bottom: 20px; }
+      header .menu-hamburguesa-dealer .opciones-menu .redes-sociales a {
+        margin: 10px; }
+      header .menu-hamburguesa-dealer .opciones-menu .redes-sociales img {
+        width: 50px;
+        height: 50px; }
+
+header div nav .banner-dealer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(205, 154, 154, 0);
+  background: linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -webkit-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%);
+  background: -moz-linear-gradient(90deg, rgba(205, 154, 154, 0) 0%, #2c2c2c 80%); }
+  header div nav .banner-dealer .link {
+    list-style: none; }
+    header div nav .banner-dealer .link a {
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      font-family: 'Goldman', cursive;
+      font-family: 'Gruppo', cursive;
+      font-weight: bold; }
+    header div nav .banner-dealer .link a:hover {
+      font-size: 1.75rem;
+      transition: font-size 0.5s ease;
+      /* Transición de medio segundo */ }
+    header div nav .banner-dealer .link a:not(:hover) {
+      font-size: 1.5rem;
+      transition: font-size 0.5s ease; }
+  header div nav .banner-dealer .paganilogo {
+    list-style: none; }
+    header div nav .banner-dealer .paganilogo img {
+      height: 25px; }
 
 main .h1-dealers {
-  margin: 4rem;
+  margin-top: 5rem;
+  text-align: center;
   font-family: 'Goldman', cursive;
   font-family: 'Gruppo', cursive;
   font-weight: bold;
@@ -569,21 +794,41 @@ main .h2-dealers {
   font-family: 'Goldman', cursive;
   font-family: 'Gruppo', cursive;
   font-weight: bold;
-  margin-left: 4rem; }
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem; }
 
 main .maps {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  height: 30rem; }
+  text-align: center; }
+
+/* PC */
+@media screen and (min-width: 851px) {
+  header .menu-hamburguesa-dealer {
+    display: none; }
+  main .maps .maps-tablet {
+    display: none; }
+  main .maps .maps-cel {
+    display: none; } }
 
 /* tablets */
 @media screen and (max-width: 850px) {
-  .contenedor-footer .contenedor-redes {
+  header div nav .banner-dealer .link {
     display: none; }
-  main .maps img {
-    height: 200px; } }
+  main .maps .maps-pc {
+    display: none; }
+  main .maps .maps-cel {
+    display: none; }
+  .contenedor-footer .contenedor-redes {
+    display: none; } }
+
+/* celulares */
+@media screen and (max-width: 500px) {
+  main .maps .maps-pc {
+    display: none; }
+  main .maps .maps-tablet {
+    display: none; }
+  main .maps .maps-cel {
+    display: block; } }
 
 .bodyindex, .bodyhyper, .bodyhistoria, .bodydealer, .bodycontacto {
   background-repeat: no-repeat;
@@ -604,16 +849,24 @@ main .h1-contacto {
 main .formulario {
   margin-top: 70px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-family: 'Goldman', cursive;
+  font-family: 'Gruppo', cursive;
+  font-weight: bold; }
   main .formulario .contenedor-dentro-formulario {
     font-size: 30px;
     background-color: #e2e2e257;
-    padding: 15px; }
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px; }
     main .formulario .contenedor-dentro-formulario .form {
       font-size: 20px;
       display: flex;
       justify-content: flex-end;
       margin: 5px; }
+      main .formulario .contenedor-dentro-formulario .form input {
+        border: 0.5px solid black;
+        border-radius: 3px; }
 
 main .h2-contacto {
   color: antiquewhite;

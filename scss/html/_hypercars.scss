@@ -32,7 +32,7 @@ header{
             font-size: 30px;
             cursor: pointer;
             z-index: 1;
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         .opciones-menu{
@@ -175,21 +175,44 @@ header{
     }
 
     .contenedor-hyper{
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-top: 5rem;
 
-        // display: flex;
-        // flex-flow: row wrap;
-        // justify-content: center;
+        .huayra{
+            display: flex;
+            justify-content: center; 
+            gap: 3rem;
+        }
 
-       div{
-            img{
-                height: 550px;
+        .imola{
+            display: flex;
+            margin-top: 10rem;
+            justify-content: center; 
+            gap: 3rem;
+
+            .texto-imola{
+                display: flex;
+                flex-flow: column;
+                align-items: flex-end;
             }
-        } 
-    }
-        
+        }
+
+        .zonda{
+            display: flex;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            justify-content: center; 
+            gap: 3rem;
+        }
     
+        div{
+            div{
+                img{
+                    height: 550px;
+                    box-shadow: 5px 5px 5px black;
+                }
+            }
+        }
+    } 
 }
 
 .contenedor-footer{
@@ -234,24 +257,46 @@ header{
 
     .mainhyper{
         .contenedor-hyper{
-            margin-left: 0%;
-            margin-right: 0%;
-            height: 50px;
 
+            .huayra{
+                display: flex;
+                flex-flow: column;
+                align-items: center; 
+                gap: 3rem;
+            }
+    
+            .imola{
+                display: flex;
+                flex-flow: column-reverse;
+                align-items: center;
+                
+                margin-top: 10rem;
+                gap: 3rem;
+    
+                .texto-imola{
+                    display: flex;
+                    flex-flow: column;
+                    align-items: start;
+                }
+            }
+    
+            .zonda{
+                display: flex;
+                flex-flow: column;
+                align-items: center; 
+                margin-top: 10rem;
+                margin-bottom: 10rem;
+                gap: 3rem;
+            }
+        
             div{
                 div{
-                    div{
-                        img{
-                            margin-top: 3rem;
-                            height: 450px;
-                        }
+                    img{
+                        height: 450px;
                     }
                 }
-            } 
-        
+            }
         }
-
-        
     }
 }
 
@@ -268,14 +313,11 @@ header{
         .contenedor-hyper{
             div{
                 div{
-                    div{
-                        img{
-                            margin-top: 5rem;
-                            height: 350px;
-                        }
+                    img{
+                        height: 350px;
                     }
                 }
-            } 
+            }
         }
     }
 }

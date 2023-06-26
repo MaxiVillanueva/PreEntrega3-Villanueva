@@ -19,17 +19,27 @@ main{
         margin-top: 70px;
         display: flex;
         justify-content: center;
+        font-family: 'Goldman', cursive;
+        font-family: 'Gruppo', cursive;
+        font-weight: bold;
 
         .contenedor-dentro-formulario{
             font-size: 30px;
             background-color: #e2e2e257;
             padding: 15px;
+            border: 2px solid black;
+            border-radius: 10px;
 
             .form{
                 font-size: 20px;
                 display: flex;
                 justify-content: flex-end;
                 margin: 5px;
+
+                input{
+                    border: 0.5px solid black;
+                    border-radius: 3px;
+                }
             }
         }
     }
